@@ -1,0 +1,63 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Cairo',sans-serif;
+  background:#050816;
+  color:white;
+}
+
+nav{
+  width:100%;
+  padding:25px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:32px;
+  font-weight:900;
+}
+
+.back-btn{
+  color:white;
+  text-decoration:none;
+}
+
+.folder-hero{
+  text-align:center;
+  padding:120px 8%;
+}
+
+.folder-hero h1{
+  font-size:70px;
+}
+
+.videos-grid{
+  padding:0 8% 120px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(340px,1fr));
+
+  gap:30px;
+}
+
+.video-card{
+  background:rgba(255,255,255,.03);
+  border-radius:30px;
+  overflow:hidden;
+}
+
+.video-card video{
+  width:100%;
+}
+
+.video-content{
+  padding:25px;
+}
