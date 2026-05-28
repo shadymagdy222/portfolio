@@ -348,9 +348,14 @@ section{
   align-items:center;
   text-align:center;
 }
+.tasbeeh-section{
+  padding:0 8% !important;
+  margin-top:-80px;
+  margin-bottom:-80px;
+}
 
 .tasbeeh-content p{
-  font-size:40px;
+  font-size:30px;
   color:rgba(255,255,255,.75);
   line-height:2;
   letter-spacing:2px;
@@ -362,7 +367,6 @@ section{
   color:#2563ff;
   transform:scale(1.03);
 }
-
 
 /* ABOUT */
 
