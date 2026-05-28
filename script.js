@@ -279,4 +279,11 @@ cards.forEach((card)=>{
   });
 
 });
+const audio = document.getElementById("introSound");
+
+document.addEventListener("click", () => {
+
+  audio.play();
+
+}, { once: true });
 
