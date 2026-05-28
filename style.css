@@ -338,6 +338,32 @@ section{
   margin-top:10px;
 }
 
+/* TASBEEH SECTION */
+
+.tasbeeh-section{
+  width:100%;
+  padding:120px 8% 40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.tasbeeh-content p{
+  font-size:40px;
+  color:rgba(255,255,255,.75);
+  line-height:2;
+  letter-spacing:2px;
+  font-weight:300;
+  transition:.4s;
+}
+
+.tasbeeh-content p:hover{
+  color:#2563ff;
+  transform:scale(1.03);
+}
+
+
 /* ABOUT */
 
 .about-box{
