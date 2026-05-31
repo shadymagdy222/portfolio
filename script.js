@@ -286,4 +286,18 @@ document.addEventListener("click", () => {
   audio.play();
 
 }, { once: true });
+// أي أكواد عندك
+
+const menuBtn = document.querySelector(".menu-btn");
+
+// أكواد تانية...
+
+// ===== Scroll to top on refresh =====
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+});
 
