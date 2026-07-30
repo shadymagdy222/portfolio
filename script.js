@@ -8,15 +8,17 @@ window.addEventListener('load', () => {
 
 // ===== LOADER =====
 window.addEventListener("load", () => {
+
     const loader = document.querySelector(".loader");
 
-    if(loader){
-        setTimeout(() => {
-            loader.style.opacity = "0";
-            loader.style.visibility = "hidden";
-            loader.style.pointerEvents = "none";
-        },1500);
-    }
+    setTimeout(() => {
+
+        loader.classList.add("hide");
+
+        document.body.style.overflowY = "auto";
+
+    }, 1800);
+
 });
 
 // ===== INTRO AUDIO =====
@@ -307,49 +309,6 @@ skillsObserver.unobserve(entry.target);
 },{threshold:.4});
 
 skillItems.forEach(item=>skillsObserver.observe(item));
-
-// ===== Language Toggle =====
-
-let currentLang = "ar";
-
-const langBtn = document.getElementById("langToggle");
-
-langBtn.addEventListener("click", () => {
-
-    if(currentLang === "ar"){
-
-        currentLang = "en";
-
-        document.documentElement.lang = "en";
-        document.documentElement.dir = "ltr";
-
-        document.getElementById("nav-about").textContent = "About";
-        document.getElementById("nav-portfolio").textContent = "Portfolio";
-        document.getElementById("nav-videos").textContent = "Videos";
-        document.getElementById("nav-skills").textContent = "Skills";
-        document.getElementById("nav-contact").textContent = "Contact";
-
-        langBtn.textContent = "🌐 عربي";
-
-    }else{
-
-        currentLang = "ar";
-
-        document.documentElement.lang = "ar";
-        document.documentElement.dir = "rtl";
-
-        document.getElementById("nav-about").textContent = "عني";
-        document.getElementById("nav-portfolio").textContent = "الأعمال";
-        document.getElementById("nav-videos").textContent = "الفيديوهات";
-        document.getElementById("nav-skills").textContent = "المهارات";
-        document.getElementById("nav-contact").textContent = "تواصل";
-                
-
-        langBtn.textContent = "🌐 EN";
-
-    }
-
-});
 
 function scrollToTop() {
     window.scrollTo({
