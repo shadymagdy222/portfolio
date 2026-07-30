@@ -1,12 +1,9 @@
-<!-- ========================= index.html ========================= -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Shady Magdy | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shady Magdy | Creative Editor</title>
 
   <!-- 👇 ده اللي بيخلي اللينك يظهر بصورة -->
   <meta property="og:title" content="Shady Magdy | Portfolio" />
@@ -14,451 +11,455 @@
   <meta property="og:image" content="https://shadymagdy222.github.io/portfolio/preview.jpg" />
   <meta property="og:url" content="https://shadymagdy222.github.io/portfolio/" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-  <title>Shady Magdy | Creative Editor</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-
-  <!-- FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- LOADER -->
-  <div class="loader">
-  <img src="logo.png" alt="logo" class="loader-logo">
-</div>
+    <!-- AUDIO -->
+    <audio id="introSound">
+        <source src="intro.mp3" type="audio/mpeg">
+    </audio>
 
-  <!-- CURSOR -->
-  <div class="cursor-dot"></div>
-  <div class="cursor-outline"></div>
-
-  <!-- BACKGROUND -->
-  <div class="grid-bg"></div>
-
-  <div class="blur blur1"></div>
-  <div class="blur blur2"></div>
-
-  <!-- NAVBAR -->
-  <nav>
-
-   <div class="logo">
-  <img src="logo.png" alt="logo">
-</div>
-
-    <div class="nav-links">
-
-      <a href="#about">عني</a>
-      <a href="#portfolio">الأعمال</a>
-      <a href="#videos">الفيديوهات</a>
-      <a href="#skills">المهارات</a>
-      <a href="#contact">تواصل</a>
-
+    <!-- LOADER -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="logo.png" alt="logo" class="loader-logo">
+            <div class="loading-bar"></div>
+        </div>
     </div>
 
-  </nav>
+    <!-- CURSOR -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-  <!-- HERO -->
-  <section class="hero">
+    <!-- BACKGROUND EFFECTS -->
+    <div class="grid-bg"></div>
+    <div id="particles-js"></div> <!-- 3D Floating Particles -->
+    <div class="blur blur1"></div>
+    <div class="blur blur2"></div>
 
-    <!-- LEFT -->
-    <div class="hero-text reveal">
+    <!-- NAVBAR -->
+    <nav>
+        <a href="javascript:void(0)" class="logo" onclick="scrollToTop()">
+        <img src="logo.png" alt="logo">
+            </a>
+        
+        <div class="nav-links">
+            <a href="#about" class="magnetic" id="nav-about">عني</a>
 
-      <span class="hero-tag">
+            <a href="#portfolio" class="magnetic" id="nav-portfolio">الأعمال</a>
 
-        <i class="fa-solid fa-circle-check"></i>
-        PROFESSIONAL VIDEO EDITOR
+            <a href="#videos" class="magnetic" id="nav-videos">الفيديوهات</a>
 
-      </span>
+            <a href="#skills" class="magnetic" id="nav-skills">المهارات</a>
 
-      <h1>
+            <a href="#contact" class="magnetic" id="nav-contact">تواصل</a>
+        </div>
 
-        SHADY
-        <span>MAGDY</span>
+        <!-- Mobile Menu Toggle -->
+        <div class="nav-actions">
 
-      </h1>
+    <button id="langToggle" class="lang-btn">
+        🌐 EN
+    </button>
 
-      <h2 class="typing"></h2>
-
-      <p>
-
-        مونتير ومصمم جرافيك متخصص في صناعة
-        الفيديوهات السينمائية والإعلانات والريلز
-        والمحتوى الاحترافي للسوشيال ميديا
-        بخبرة أكتر من 10 سنين.
-
-      </p>
-
-      <div class="hero-buttons"><div class="hero-buttons">
-
-  <a href="https://wa.me/201003066714"
-    target="_blank"
-    class="main-btn magnetic">
-
-    <i class="fa-brands fa-whatsapp"></i>
-    واتساب
-
-  </a>
-
-<a href="cv.pdf"
-  target="_blank"
-  class="glass-btn magnetic">
-
-  <i class="fa-solid fa-file-arrow-down"></i>
-  تحميل الـ CV
-
-</a>
-
-</div>
-
-      </div>
-
-      <!-- SOCIAL -->
-<div class="socials">
-
-  <a href="https://www.behance.net/shadymagdy222003" target="_blank">
-    <i class="fa-brands fa-behance"></i>
-  </a>
-
-  <a href="https://www.instagram.com/shadymagdy222/" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/in/shadymagdy222003/" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-
-</div>
-
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
     </div>
 
-    <!-- RIGHT -->
-    <div class="hero-image reveal">
+</div>
+    </nav>
 
-      <!-- حط صورتك -->
-      <img src="me.jpg" alt="Shady">
+    <!-- HERO -->
+    <section class="hero">
+        <!-- LEFT -->
+        <div class="hero-text reveal">
+            <span class="hero-tag">
+                <i class="fa-solid fa-circle-check"></i>
+                مونتير فيديو محترف
+            </span>
+            <h1>
+                شادي <span>مجدي</span>
+            </h1>
+            <h2 class="typing"></h2>
+            <p>
+                مونتير ومصمم جرافيك متخصص في صناعة الفيديوهات السينمائية والإعلانات والريلز والمحتوى الاحترافي للسوشيال ميديا بخبرة أكتر من 10 سنين.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/201003066714" target="_blank" class="main-btn magnetic">
+                    <i class="fa-brands fa-whatsapp"></i> واتساب
+                </a>
+                <a href="cv.pdf" target="_blank" class="glass-btn magnetic">
+                    <i class="fa-solid fa-file-arrow-down"></i> تحميل الـ CV
+                </a>
+            </div>
+            <!-- SOCIAL -->
+            <div class="socials">
+                <a href="https://www.behance.net/shadymagdy222003" target="_blank" class="magnetic"><i class="fa-brands fa-behance"></i></a>
+                <a href="https://www.instagram.com/shadymagdy222/" target="_blank" class="magnetic"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/shadymagdy222003/" target="_blank" class="magnetic"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
 
-      <div class="image-glow"></div>
+        <!-- RIGHT -->
+        <div class="hero-image reveal">
+            <img src="shady.png" alt="Shady">
+            <div class="image-glow"></div>
+            <!-- 3D Floating Elements -->
+            <div class="floating-icon icon-1"><i class="fa-solid fa-video"></i></div>
+            <div class="floating-icon icon-2"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        </div>
+    </section>
+  
+    <!-- TASBEEH -->
+    <!-- ISLAMIC QUOTE -->
+
+<section class="quote-section">
+
+    <div class="quote-card reveal">
+
+        <i class="fa-solid fa-mosque"></i>
+
+        <h3>
+            ﴿ فَاذْكُرُونِي أَذْكُرْكُمْ ﴾
+        </h3>
+
+        <p>
+            وَلَا تَنْسَوْا ذِكْرَ اللَّهِ فِي كُلِّ حِينٍ
+        </p>
 
     </div>
-
-  </section>
-        <!-- TASBEEH -->
-<section class="tasbeeh-section">
-
-  <div class="tasbeeh-content">
-    <p>استغفر الله العظيم</p>
-    <p>الذي لا اله الا هو الحي القيوم وأتوب إليه</p>
-  </div>
 
 </section>
-    
-  <!-- ABOUT -->
-  <section class="about" id="about">
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="section-head reveal">
+            <span>نبذة عني</span>
+            <h2>من أنا</h2>
+        </div>
+        <div class="about-box reveal box-3d">
+            <p>
+                
+محرر فيديو إبداعي ومصمم موشن جرافيك متخصص في إنتاج مقاطع الفيديو والفيديوهات والمحتوى الإبداعي للسوشيال ميديا.
+            </p>
+            <div class="stats">
+                
 
-    <div class="section-head">
+    <div class="stat reveal">
 
-      <span>ABOUT ME</span>
-      <h2>عني</h2>
+        <i class="fa-solid fa-award"></i>
+
+        <h3 class="counter" data-target="10">0</h3>
+
+        <span>+</span>
+
+        <p>سنوات خبرة</p>
 
     </div>
 
-    <div class="about-box reveal">
-
-      <p>
-
-        Creative Video Editor & Motion Designer
-        متخصص في صناعة الإعلانات والفيديوهات
-        السينمائية والمحتوى الإبداعي للسوشيال ميديا.
-
-      </p>
-
-      <div class="stats">
-
-        <div class="stat">
-
-          <h3>10+</h3>
-          <p>سنين خبرة</p>
-
-        </div>
-
-        <div class="stat">
-
-          <h3>100+</h3>
-          <p>مشروع</p>
-
-        </div>
-
-        <div class="stat">
-
-          <h3>50+</h3>
-          <p>عميل</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="portfolio" id="portfolio">
-
-    <div class="section-head">
-
-      <span>PORTFOLIO</span>
-      <h2>أشهر الأعمال</h2>
-
-    </div>
-
-    <div class="portfolio-grid">
-
-      <!-- CARD -->
-      <div class="portfolio-card reveal"
-        onclick="openProject('https://www.youtube.com/watch?v=jfX-ZgX3OZI')">
-
-        <img src="خطر مجالي.jpg" alt="work">
-
-        <div class="overlay">
-
-          <h3>Video Lyrics</h3>
-          <p>أغنية خطر مجالي</p>
-
-          <div class="view-btn">
-
-            مشاهدة المشروع
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="portfolio-card reveal"
-        onclick="openProject('https://www.youtube.com/watch?v=7Pe4hD36bJY')">
-
-        <img src="انسان كداب.jpg" alt="work">
-
-        <div class="overlay">
-
-          <h3>Video Lyrics</h3>
-          <p>أغنية إنسان كداب</p>
-
-          <div class="view-btn">
-
-            مشاهدة المشروع
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="portfolio-card reveal"
-        onclick="openProject('https://www.youtube.com/watch?v=O1tbY0Ht7Vg')">
-
-        <img src="اول ما سحبت حزامي.jpg" alt="work">
-
-        <div class="overlay">
-
-          <h3>Video Lyrics</h3>
-          <p>أول ما سحبت حزامي 2</p>
-
-          <div class="view-btn">
-
-            مشاهدة المشروع
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- VIDEO FOLDERS -->
-  <section class="folders-section"
-    id="videos">
-
-    <div class="section-head">
-
-      <span>VIDEO FOLDERS</span>
-
-      <h2>
-        مجلدات الفيديوهات
-      </h2>
-
-    </div>
-
-    <div class="folders-grid">
-
-      <!-- ADS -->
-      <a href="VisualFX.html"
-      target="_blank"
-        class="folder-card">
-
-        <div class="folder-icon">
-
-          <i class="fa-solid fa-folder"></i>
-
-        </div>
-
-        <h3>
-          Visual FX
-        </h3>
-
-      </a>
-
-      <!-- MUSIC -->
-      <a href="Medical.html"
-      target="_blank"
-        class="folder-card">
-
-        <div class="folder-icon">
-
-          <i class="fa-solid fa-folder"></i>
-
-        </div>
-
-        <h3>
-          Medical Reels
-        </h3>
-
-      </a>
-
-      <!-- REELS -->
-      <a href="Content Creators.html"
-      target="_blank"
-        class="folder-card">
-
-        <div class="folder-icon">
-
-          <i class="fa-solid fa-folder"></i>
-
-        </div>
-
-        <h3>
-          Content Creators
-        </h3>
-
-      </a>
-
-    </div>
-
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills" id="skills">
-
-    <div class="section-head">
-
-      <span>SKILLS</span>
-      <h2>المهارات</h2>
-
-    </div>
-
-    <div class="skills-grid">
-
-      <div class="skill reveal">
+    <div class="stat reveal">
 
         <i class="fa-solid fa-film"></i>
-        <span>Video Editing</span>
 
-      </div>
+        <h3 class="counter" data-target="150">0</h3>
 
-      <div class="skill reveal">
+        <span>+</span>
 
-        <i class="fa-solid fa-bolt"></i>
-        <span>After Effects</span>
-
-      </div>
-
-      <div class="skill reveal">
-
-        <i class="fa-solid fa-video"></i>
-        <span>Premiere Pro</span>
-
-      </div>
-
-      <div class="skill reveal">
-
-        <i class="fa-solid fa-palette"></i>
-        <span>Graphic Design</span>
-
-      </div>
+        <p>مشروع مكتمل</p>
 
     </div>
 
-  </section>
+    <div class="stat reveal">
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+        <i class="fa-solid fa-users"></i>
 
-    <div class="contact-box reveal">
+        <h3 class="counter" data-target="80">0</h3>
 
-      <h2>
-        جاهز تبدأ مشروعك؟
-      </h2>
+        <span>+</span>
 
-      <p>
-        ابعتلي فكرتك وهحولها لفيديو احترافي يخطف الانتباه.
-      </p>
+        <p>عميل سعيد</p>
+        
 
-      <a href="https://wa.me/201003066714"
-        target="_blank"
-        class="main-btn magnetic">
+    </div>
+    
 
-        <i class="fa-brands fa-whatsapp"></i>
-        تواصل الآن
+</div>
+        </div>
+<div class="education-grid reveal">
 
-      </a>
+    <div class="edu-card">
+        <i class="fa-solid fa-building-columns"></i>
+        <h3>جهة الدراسة</h3>
+        <p>المعهد العالي للإدارة وتكنولوجيا المعلومات</p>
+    </div>
+
+    <div class="edu-card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>التخصص</h3>
+        <p>علوم الحاسب</p>
+    </div>
+
+    <div class="edu-card">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>التخرج المتوقع</h3>
+        <p>2027</p>
+    </div>
+
+</div>
+        
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="section-head reveal">
+            <span>المهارات</span>
+            <h2>خبراتي التقنية</h2>
+        </div>
+        <div class="skills-grid">
+           <div class="skills-wrapper reveal">
+
+    <!-- Left -->
+    <div class="expertise">
+
+        <div class="skill-item">
+
+            <div class="skill-head">
+                <span>🎬 مونتاج الفيديو</span>
+                <span class="skill-number" data-target="95">0%</span>
+            </div>
+
+            <div class="progress">
+                <div class="progress-fill" data-progress="95"></div>
+            </div>
+
+        </div>
+
+        <div class="skill-item">
+
+            <div class="skill-head">
+                <span>✨ موشن جرافيك</span>
+                <span class="skill-number" data-target="90">0%</span>
+            </div>
+
+            <div class="progress">
+                <div class="progress-fill" style="--width:90%"></div>
+            </div>
+
+        </div>
+
+        <div class="skill-item">
+
+            <div class="skill-head">
+                <span>🎨 تصميم جرافيك</span>
+                <span class="skill-number" data-target="95">0%</span>
+            </div>
+
+            <div class="progress">
+                <div class="progress-fill" style="--width:95%"></div>
+            </div>
+
+        </div>
+
+        <div class="skill-item">
+
+            <div class="skill-head">
+                <span>🎞 تصحيح الألوان</span>
+                <span class="skill-number" data-target="80">0%</span>
+            </div>
+
+            <div class="progress">
+                <div class="progress-fill" style="--width:80%"></div>
+            </div>
+
+        </div>
 
     </div>
 
-  </section>
+    <!-- Right -->
 
-  <!-- FOOTER -->
-  <footer>
+    <div class="software-grid">
 
-    <h3>
-      SHADY MAGDY
-    </h3>
+        <div class="software-card">Pr <span>Premiere Pro</span></div>
 
-    <p>
-      Creative Video Editor & Motion Designer
-    </p>
+        <div class="software-card">Ae <span>After Effects</span></div>
 
-  </footer>
+        <div class="software-card">Ps <span>Photoshop</span></div>
 
-  <!-- JS -->
-  <audio id="introSound">
-  <source src="intro.mp3" type="audio/mpeg">
-</audio>
+        <div class="software-card">Da <span>DaVinci Resolve</span></div>
 
-<script src="script.js"></script>
+    </div>
 
+</div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-head reveal">
+            <span>أبرز الأعمال</span>
+            <h2>نماذج من أعمالي</h2>
+        </div>
+        <div class="portfolio-grid">
+            <!-- CARD 1 -->
+            <div class="portfolio-card reveal tilt-card" onclick="openProject('https://www.youtube.com/watch?v=jfX-ZgX3OZI')">
+                <img src="خطر مجالي.jpg" alt="work">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>مونتاج أغنية</h3>
+                        <p>أغنية خطر مجالي</p>
+                        <div class="view-btn">مشاهدة المشروع <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="portfolio-card reveal tilt-card" onclick="openProject('https://www.youtube.com/watch?v=7Pe4hD36bJY')">
+                <img src="انسان كداب.jpg" alt="work">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>مونتاج أغنية</h3>
+                        <p>أغنية إنسان كداب</p>
+                        <div class="view-btn">مشاهدة المشروع <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="portfolio-card reveal tilt-card" onclick="openProject('https://www.youtube.com/watch?v=O1tbY0Ht7Vg')">
+                <img src="اول ما سحبت حزامي.jpg" alt="work">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>مونتاج أغنية</h3>
+                        <p>أول ما سحبت حزامي 2</p>
+                        <div class="view-btn">مشاهدة المشروع <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO FOLDERS -->
+    <section class="folders-section" id="videos">
+        <div class="section-head reveal">
+            <span>معرض الأعمال</span>
+            <h2>تصفح حسب التصنيف</h2>
+        </div>
+        <div class="folders-grid">
+            <a href="VisualFX.html" target="_blank" class="folder-card reveal tilt-card">
+                <div class="folder-icon"><i class="fa-solid fa-folder"></i></div>
+                <h3>المؤثرات البصرية</h3>
+            </a>
+            <a href="Medical.html" target="_blank" class="folder-card reveal tilt-card">
+                <div class="folder-icon"><i class="fa-solid fa-folder"></i></div>
+                <h3>ريلز طبية</h3>
+            </a>
+            <a href="Content Creators.html" target="_blank" class="folder-card reveal tilt-card">
+                <div class="folder-icon"><i class="fa-solid fa-folder"></i></div>
+                <h3>صناع المحتوى</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="portfolio-drive reveal">
+
+    <div class="drive-box">
+
+        <div class="drive-icon">
+            <i class="fa-solid fa-folder-open"></i>
+        </div>
+
+        <h2>عايز تشوف أعمال أكتر؟</h2>
+
+        <p>
+            تصفح جميع أعمالي في المونتاج والموشن جرافيك بجودة عالية ومن مشاريع حقيقية.
+
+        <a href="https://drive.google.com/drive/u/0/folders/1rAPfFu5Oa6Apwdiz8BED5EP6wfSd0ves"
+           target="_blank"
+           class="drive-btn magnetic">
+
+            عرض جميع الأعمال
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- CONTACT CTA -->
+<section class="cta-section" id="contact">
+
+    <div class="cta-card reveal">
+
+        <div class="cta-content">
+
+            <span class="cta-tag">
+                لنصنع شيئًا مميزًا
+            </span>
+
+            <h2>
+                جاهز تحول فكرتك
+                <span>لفيديو احترافي؟</span>
+            </h2>
+
+            <p>
+                سواء إعلان، ريلز، موشن جرافيك أو فيديو يوتيوب...
+                أنا هساعدك تطلع بأفضل نتيجة ممكنة.
+            </p>
+
+            <div class="cta-features">
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    مونتاج الفيديو
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    موشن جرافيك
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    فيديوهات السوشيال ميديا
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    تسليم سريع
+                </div>
+
+            </div>
+
+            <a href="https://wa.me/201003066714"
+               target="_blank"
+               class="cta-btn magnetic">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                ابدأ مشروعك الآن
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- FOOTER -->
+    <footer>
+        <h3>شادي مجدي</h3>
+        <p>مونتير فيديو ومصمم موشن جرافيك</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
-
 </html>
