@@ -1310,3 +1310,14 @@ html{
     scrollbar-width:thin;
     scrollbar-color:#2563ff #050816;
 }
+
+.socials a{
+    text-decoration: none !important;
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.socials a::before,
+.socials a::after{
+    content: none !important;
+    display: none !important;
+}
