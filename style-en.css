@@ -1281,3 +1281,14 @@ background:var(--primary);
 transform:translateY(-2px);
 
 }
+
+.socials a{
+    text-decoration: none !important;
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.socials a::before,
+.socials a::after{
+    content: none !important;
+    display: none !important;
+}
